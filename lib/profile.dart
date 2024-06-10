@@ -18,12 +18,12 @@ class _ProfileState extends State<Profile> {
       ),
       
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        child: ListView(
+          //mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             SizedBox(height: 30,),
             Image.asset(
-              'assets/me.png',
+              'me.png',
               width: 100,
               height: 100,
               //fit: BoxFit.cover,
