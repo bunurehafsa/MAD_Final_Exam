@@ -117,7 +117,7 @@ class _TodoScreenState extends State<TodoScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('To-Do List'),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blueGrey.shade300,
       ),
       body: Column(
         children: [
@@ -127,11 +127,13 @@ class _TodoScreenState extends State<TodoScreen> {
               controller: _searchController,
               decoration: InputDecoration(
                 labelText: 'Search',
+                
                 prefixIcon: Icon(Icons.search),
                 border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.0),
+                  borderRadius: BorderRadius.circular(6.0),
                 ),
               ),
+              
             ),
           ),
           Expanded(
@@ -165,7 +167,7 @@ class _TodoScreenState extends State<TodoScreen> {
       floatingActionButton: FloatingActionButton(
         onPressed: () => _showTaskDialog(),
         child: Icon(Icons.add),
-        backgroundColor: Colors.deepPurple,
+        backgroundColor: Colors.blueGrey.shade300,
       ),
 
     );
